@@ -1,8 +1,8 @@
 #!/bin/bash
 
 if [ -z "$1" ]; then
-    echo "ERROR: Please provide a project name ."
-    echo "Use: ./setup_project.sh <project_name>"
+    echo "ERROR: Please provide a project name suffix."
+    echo "Usage: ./setup_project.sh <project_name>"
     exit 1
 fi
 
@@ -61,16 +61,13 @@ import os
 from datetime import datetime
 
 def run_attendance_check():
-    # 1. Load Config
     with open('Helpers/config.json', 'r') as f:
         config = json.load(f)
         
-    # 2. Archive old reports.log if it exists
     if os.path.exists('reports/reports.log'):
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         os.rename('reports/reports.log', f'reports/reports_{timestamp}.log.archive')
         
-    # 3. Process Data
     with open('Helpers/assets.csv', mode='r') as f, open('reports/reports.log', 'w') as log:
         reader = csv.DictReader(f)
         total_sessions = config['total_sessions']
@@ -82,7 +79,6 @@ def run_attendance_check():
             email = row['Email']
             attended = int(row['Attendance Count'])
             
-            # Simple Math: (Attended / Total) * 100
             attendance_pct = (attended / total_sessions) * 100
             message = ""
             
