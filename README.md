@@ -5,7 +5,7 @@ An automated Infrastructure as Code (IaC) engine built to deploy an attendance t
 ## Project Architecture Component Map
 
 The script creates a main folder named 
-`attendance_tracker_classF`. 
+`attendance_tracker_classA`. 
 
 Inside this root folder, it sets up 
 the core application script:
