@@ -53,6 +53,5 @@ To launch the engine, you must pass a custom project name suffix as an argument:
 chmod +x setup_project.sh
 ./setup_project.sh <project_name>
 
-video explaining the project
-<img width="244" height="305" alt="Screenshot 2026-06-16 172706" src="https://github.com/user-attachments/assets/c5e75f4e-a531-4a7a-b370-cdfbf7d63f98" />
+## video explaining the project
 
