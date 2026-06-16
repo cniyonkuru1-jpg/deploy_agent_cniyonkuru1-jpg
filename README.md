@@ -1,4 +1,4 @@
-# Student Attendance Tracker Deployment Engine
+# Student Attendance Tracker
 
 An automated Infrastructure as Code (IaC) engine built to deploy an attendance tracking application workspace.
 
