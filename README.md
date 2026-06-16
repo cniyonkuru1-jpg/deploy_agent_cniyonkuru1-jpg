@@ -54,4 +54,5 @@ chmod +x setup_project.sh
 ./setup_project.sh <project_name>
 
 ## video explaining the project
+You can watch the video here [https://drive.google.com/file/d/1nphlC98XqieZJCteNpI1YidMlUNTWxh4/view?usp=drive_link]
 
