@@ -6,7 +6,7 @@ An automated Infrastructure as Code (IaC) engine built to deploy an attendance t
 
 The root of your repository contains:
 * `setup_project.sh`  
-  The automation pipeline script that accepts a suffix parameter.
+ "The setup script that asks you to type a project name."
 * `README.md`  
   The project description and user guide file.
 
